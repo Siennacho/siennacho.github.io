@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Seohyun Cho — 소프트웨어 개발자 포트폴리오" />
+    <meta
+      name="description"
+      content="Seohyun Cho — Finance & Data-focused Full-stack Developer 포트폴리오"
+    />
     <title>Seohyun Cho — Portfolio</title>
     <link rel="canonical" href="https://siennacho.github.io/" />
     <meta property="og:url" content="https://siennacho.github.io/" />
     <meta property="og:title" content="Seohyun Cho — Portfolio" />
-    <meta property="og:description" content="Software Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Finance & Data-focused Full-stack Developer — Portfolio"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,6 +36,7 @@
           <a href="#stack">스택</a>
           <a href="#contact">연락</a>
         </nav>
+        <a class="lang-link" href="/en.html" lang="en" aria-label="View English version">EN</a>
         <button type="button" class="theme-toggle" aria-label="테마 전환" data-theme-toggle>
           <span class="theme-toggle__icon" aria-hidden="true"></span>
         </button>
@@ -39,18 +46,20 @@
     <main id="main">
       <section class="hero">
         <div class="container hero-inner">
-          <p class="eyebrow">Software Developer</p>
+          <p class="eyebrow">Full-stack Developer (Finance &amp; Data-focused)</p>
           <h1 class="hero-title">
             안녕하세요,<br />
             저는 <span class="hero-title__accent">Seohyun Cho</span>입니다.
           </h1>
           <p class="hero-lead">
-            사용자 경험과 코드 품질을 함께 고려하는 개발자입니다. 이 문장은 본인의 강점에 맞게
-            수정해 주세요.
+            금융과 데이터에 관심을 두고, 현실 문제 해결에 집중하는 데이터 기반 웹 애플리케이션을
+            만듭니다. 자산운용사 웹사이트부터 Windows 기반 USB 보안 시스템까지, 백엔드 로직과
+            시스템 제어를 함께 다뤄 왔습니다. 현재는 핀테크/소프트웨어 엔지니어링 분야에서 데이터·프로그래밍·금융
+            인사이트를 결합할 기회를 찾고 있습니다.
           </p>
           <div class="hero-actions">
             <a class="btn btn--primary" href="#contact">연락하기</a>
-            <a class="btn btn--ghost" href="#" download>이력서 PDF</a>
+            <a class="btn btn--ghost" href="/assets/SeohyunCho_Resume.pdf" download>이력서 PDF</a>
             <a
               class="btn btn--ghost"
               href="https://github.com/Siennacho"
@@ -62,15 +71,15 @@
           <dl class="metrics" aria-label="요약 지표">
             <div class="metrics__item">
               <dt>경력</dt>
-              <dd><span class="metrics__value">N</span>년</dd>
+              <dd><span class="metrics__value">0</span>년 <span class="metrics__suffix">(신입)</span></dd>
             </div>
             <div class="metrics__item">
               <dt>프로젝트</dt>
-              <dd><span class="metrics__value">N</span>+</dd>
+              <dd><span class="metrics__value">2</span>+</dd>
             </div>
             <div class="metrics__item">
-              <dt>기여</dt>
-              <dd><span class="metrics__value">N</span> repos</dd>
+              <dt>배포</dt>
+              <dd><span class="metrics__value">-</span></dd>
             </div>
           </dl>
         </div>
@@ -80,8 +89,14 @@
         <div class="container narrow">
           <h2 class="section-title">소개</h2>
           <p class="prose">
-            문제를 작은 단위로 나누고, 측정 가능한 개선을 반복하는 일을 좋아합니다. 이 단락에는
-            경험과 가치관을 3~5문장으로 적어 주세요.
+            저는 금융, 데이터, 그리고 현실 문제 해결에 강한 관심을 가진 개발자입니다. 웹 애플리케이션부터 시스템 레벨 도구까지,
+            실제로 작동하는 실용적인 시스템을 만드는 것을 목표로 하며, 문제를 단계적으로 쪼개 끝까지 이해하고 해결하는 과정에서
+            즐거움을 느낍니다.
+            <br /><br />
+            최근에는 백엔드 개발, 데이터베이스 설계, 그리고 보안 중심 시스템 구축에 집중하고 있습니다. 또한 응용수학/통계 배경을
+            바탕으로 프로그래밍 역량을 결합해 핀테크 및 데이터 기반 환경에서 성장하고 싶습니다.
+            <br /><br />
+            의미 있는 제품에 기여하면서 개발자로서 빠르게 성장할 수 있는 기회를 찾고 있습니다.
           </p>
         </div>
       </section>
@@ -89,38 +104,39 @@
       <section id="work" class="section section--alt">
         <div class="container">
           <h2 class="section-title">프로젝트</h2>
-          <p class="section-desc">대표 작업을 카드로 정리합니다.</p>
+          <p class="section-desc">실제 문제를 해결한 작업 2가지를 중심으로 정리했습니다.</p>
           <ul class="card-grid">
             <li>
               <article class="card">
-                <h3 class="card__title">프로젝트 이름</h3>
-                <p class="card__meta">역할 · 스택</p>
-                <p class="card__text">목표, 기여, 결과를 한두 문장으로 적어 주세요.</p>
+                <h3 class="card__title">Bestern 자산관리(Asset Management) 웹사이트</h3>
+                <p class="card__meta">개인 · Full-stack · Flask · HTML/CSS · Tailwind · SQLite/PostgreSQL</p>
+                <p class="card__text">
+                  자산운용사 기업 웹사이트를 구축했습니다. 사용자 인증, 게시판, 다국어 지원을 포함해 운영에 필요한 기능을
+                  백엔드/DB 중심으로 설계하고 구현했습니다.
+                  <br /><br />
+                  → 로그인 시스템 구현, DB 영속화, 파일 업로드 기능 개발<br />
+                  → 금융 콘텐츠 페이지 구조화 및 관리자 기반 게시/관리 시스템 설계
+                </p>
                 <div class="card__links">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Live</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+                  <a href="https://bestern.co.kr" target="_blank" rel="noopener noreferrer">Live</a>
                 </div>
               </article>
             </li>
             <li>
               <article class="card">
-                <h3 class="card__title">프로젝트 이름</h3>
-                <p class="card__meta">역할 · 스택</p>
-                <p class="card__text">설명을 입력하세요.</p>
+                <h3 class="card__title">PortBlocker (USB 보안 시스템)</h3>
+                <p class="card__meta">개인 · Backend/System · Python · Windows Registry · WMI · Tkinter</p>
+                <p class="card__text">
+                  승인되지 않은 저장 장치를 차단하고, 허용된 디바이스만 사용할 수 있도록 제어하는 Windows 기반 USB 제어 시스템을
+                  만들었습니다.
+                  <br /><br />
+                  → 레지스트리 정책 및 디바이스 ID 기반 필터링 구현<br />
+                  → 실시간 USB 감지/제어 모니터링 로직 설계
+                  <br /><br />
+                  결과: 외부 저장 장치 접근을 제한해 보안 수준을 강화했습니다.
+                </p>
                 <div class="card__links">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Live</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <h3 class="card__title">프로젝트 이름</h3>
-                <p class="card__meta">역할 · 스택</p>
-                <p class="card__text">설명을 입력하세요.</p>
-                <div class="card__links">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Live</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+                  <a href="https://github.com/Siennacho" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
               </article>
             </li>
@@ -132,11 +148,15 @@
         <div class="container">
           <h2 class="section-title">기술 스택</h2>
           <ul class="stack-list" aria-label="기술 목록">
+            <li>Python</li>
+            <li>Flask</li>
             <li>TypeScript</li>
             <li>React</li>
             <li>Node.js</li>
             <li>Git</li>
-            <li>UI · Design systems</li>
+            <li>SQL (SQLite/PostgreSQL)</li>
+            <li>Windows (Registry/WMI)</li>
+            <li>Security-minded development</li>
           </ul>
         </div>
       </section>
@@ -147,10 +167,10 @@
           <p class="prose">협업·채용 관련 문의는 아래로 연락 주세요.</p>
           <ul class="contact-list">
             <li>
-              <a href="mailto:you@example.com">you@example.com</a>
+              <a href="mailto:siennacho06@gmail.com">siennacho06@gmail.com</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="contact-link--empty" href="#" aria-disabled="true" tabindex="-1">LinkedIn</a>
             </li>
             <li>
               <a href="https://github.com/Siennacho" target="_blank" rel="noopener noreferrer">GitHub</a>
