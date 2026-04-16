@@ -29,4 +29,27 @@
 
   const yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav a[href^='#']");
+
+  if (sections.length && navLinks.length) {
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            navLinks.forEach(function (link) {
+              link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+            });
+          }
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+    );
+
+    sections.forEach(function (section) {
+      observer.observe(section);
+    });
+  }
 })();
