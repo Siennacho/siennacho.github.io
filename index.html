@@ -1,205 +1,282 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Seohyun Cho — Finance & Data-focused Full-stack Developer 포트폴리오"
-    />
+    <meta name="description" content="Seohyun Cho — Applied Mathematics & Statistics @ Stony Brook University" />
     <title>Seohyun Cho — Portfolio</title>
-    <link rel="canonical" href="https://siennacho.github.io/" />
-    <meta property="og:url" content="https://siennacho.github.io/" />
-    <meta property="og:title" content="Seohyun Cho — Portfolio" />
-    <meta
-      property="og:description"
-      content="Finance & Data-focused Full-stack Developer — Portfolio"
-    />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
-    <div class="bg-grid" aria-hidden="true"></div>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="#">Seohyun Cho</a>
-        <nav class="nav" aria-label="주요 메뉴">
-          <a href="#about">소개</a>
-          <a href="#work">프로젝트</a>
-          <a href="#education">학력</a>
-          <a href="#stack">스택</a>
-          <a href="#contact">연락</a>
-        </nav>
-        <a class="lang-link" href="/en.html" lang="en" aria-label="View English version">EN</a>
-        <button type="button" class="theme-toggle" aria-label="테마 전환" data-theme-toggle>
-          <span class="theme-toggle__icon" aria-hidden="true"></span>
-        </button>
+    <!-- Navigation -->
+    <nav class="top-nav">
+      <div class="nav-inner">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </div>
-    </header>
+    </nav>
 
-    <main id="main">
-      <section class="hero">
-        <div class="container hero-inner">
-          <p class="eyebrow">Applied Mathematics × Finance · Stony Brook University</p>
-          <h1 class="hero-title">
-            안녕하세요,<br />
-            저는 <span class="hero-title__accent">Seohyun Cho</span>입니다.
-          </h1>
-          <p class="hero-lead">
-            금융과 데이터에 관심을 두고, 현실 문제 해결에 집중하는 데이터 기반 웹 애플리케이션을
-            만듭니다. 자산운용사 웹사이트부터 Windows 기반 USB 보안 시스템까지, 백엔드 로직과
-            시스템 제어를 함께 다뤄 왔습니다. 현재는 핀테크/소프트웨어 엔지니어링 분야에서 데이터·프로그래밍·금융
-            인사이트를 결합할 기회를 찾고 있습니다.
+    <div class="page-wrapper">
+
+      <!-- Profile Section -->
+      <section class="profile-section">
+
+        <!-- Avatar -->
+        <img class="avatar" src="profile.png" alt="Seohyun Cho" />
+
+        <!-- Name & Title -->
+        <h1 class="profile-name">Seohyun Cho</h1>
+        <p class="profile-title">Applied Mathematics &amp; Statistics @ Stony Brook University</p>
+
+        <!-- Location -->
+        <p class="profile-location">
+          <i class="fa-solid fa-location-dot"></i>
+          Incheon, South Korea
+        </p>
+
+        <!-- Resume Button -->
+        <a href="resume.pdf" download class="resume-btn">
+          <i class="fa-solid fa-download"></i>
+          Resume
+        </a>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://github.com/Siennacho" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/seohyun-cho-66b93a392/?locale=ko" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:siennacho06@gmail.com" aria-label="Email" class="social-link">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="#" aria-label="Kaggle" class="social-link">
+            <i class="fa-brands fa-kaggle"></i>
+          </a>
+        </div>
+
+        <!-- Bio -->
+        <p class="profile-bio">
+          Undergraduate student specializing in statistical modeling, machine learning, and financial data analysis.
+          Passionate about turning data into actionable insights.
+        </p>
+
+        <!-- Skills -->
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">R</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Wolfram</span>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <h2 class="section-heading">About</h2>
+        <div class="about-body">
+          <p>
+            I build data-driven web applications and systems with a focus on finance and real-world
+            problem solving. My work spans backend development, database design, and system-level
+            tools — including an asset management website and a Windows-based USB security system.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn--primary" href="#contact">연락하기</a>
-            <a class="btn btn--ghost" href="/assets/SeohyunCho_Resume.pdf" download>이력서 PDF</a>
-            <a
-              class="btn btn--ghost"
-              href="https://github.com/Siennacho"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
+          <p>
+            I'm currently deepening my expertise in backend architecture and secure systems, while
+            combining my background in Applied Mathematics and Statistics with programming to bridge
+            data and finance. I'm looking for opportunities in fintech and software engineering where
+            I can build meaningful products, grow as a developer, and apply both analytical and
+            engineering skills to real challenges.
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <h2 class="section-heading">Projects</h2>
+
+        <!-- Engineering & Development -->
+        <p class="projects-sub">Engineering &amp; Development</p>
+        <div class="card-grid">
+
+          <article class="project-card project-card--wide">
+            <div class="card-top">
+              <span class="card-category cat-fullstack">Full-Stack</span>
+              <a href="https://bestern.co.kr/" target="_blank" rel="noopener noreferrer" class="card-github-link" aria-label="Live site">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <h3 class="card-title">Bestern Asset Management Website</h3>
+            <p class="card-meta-line">Individual · Flask · HTML/CSS · Tailwind · SQLite/PostgreSQL</p>
+            <p class="card-desc">
+              Developed a full corporate website for an asset management company, including authentication,
+              a bulletin board system, and multi-language support.
+            </p>
+            <ul class="card-bullets">
+              <li>Implemented login, database persistence, and file upload functionality</li>
+              <li>Designed structured financial content pages and an admin-controlled posting system</li>
+            </ul>
+            <div class="card-tags">
+              <span class="card-tag">Flask</span>
+              <span class="card-tag">SQLite</span>
+              <span class="card-tag">PostgreSQL</span>
+              <span class="card-tag">Tailwind</span>
+              <span class="card-tag">HTML/CSS</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--wide">
+            <div class="card-top">
+              <span class="card-category cat-system">System / Security</span>
+              <a href="https://github.com/Siennacho" target="_blank" rel="noopener noreferrer" class="card-github-link" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <h3 class="card-title">PortBlocker (USB Security System)</h3>
+            <p class="card-meta-line">Individual · Python · Windows Registry · WMI · Tkinter</p>
+            <p class="card-desc">
+              Built a Windows-based USB control system that blocks unauthorized storage devices
+              while allowing only approved devices.
+            </p>
+            <ul class="card-bullets">
+              <li>Implemented device filtering using registry policies and device IDs</li>
+              <li>Designed a monitoring system for real-time USB detection and control</li>
+            </ul>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">Windows Registry</span>
+              <span class="card-tag">WMI</span>
+              <span class="card-tag">Tkinter</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Data Science & Research -->
+        <p class="projects-sub" style="margin-top: 36px;">Data Science &amp; Research</p>
+        <div class="card-grid">
+
+          <article class="project-card">
+            <div class="card-top">
+              <span class="card-category cat-ml">Machine Learning</span>
+              <a href="#" class="card-github-link" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <h3 class="card-title">Credit Card Fraud Detection</h3>
+            <p class="card-desc">
+              Detected fraudulent transactions using XGBoost and SMOTE on an imbalanced Kaggle dataset.
+              Achieved high ROC-AUC through feature engineering and threshold tuning.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">XGBoost</span>
+              <span class="card-tag">SMOTE</span>
+              <span class="card-tag">ROC-AUC</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-top">
+              <span class="card-category cat-stat">Statistical Modeling</span>
+              <a href="#" class="card-github-link" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <h3 class="card-title">Youth Housing Vulnerability Analysis (Korea)</h3>
+            <p class="card-desc">
+              Analyzed housing vulnerability of single-person youth households across 229 Korean
+              municipalities. Used PCA, MixedLM, K-medoids clustering, and SHAP for interpretability.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">PCA</span>
+              <span class="card-tag">MixedLM</span>
+              <span class="card-tag">K-medoids</span>
+              <span class="card-tag">SHAP</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-top">
+              <span class="card-category cat-finance">Quantitative Finance</span>
+              <a href="#" class="card-github-link" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <h3 class="card-title">Federal Reserve Rate Sensitivity Analysis</h3>
+            <p class="card-desc">
+              Measured sector-level equity return sensitivity to Fed rate changes using regression
+              modeling. Identified which sectors are most exposed to monetary policy shifts.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">Regression</span>
+              <span class="card-tag">Finance</span>
+              <span class="card-tag">Statistics</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="education-section">
+        <h2 class="section-heading">Education</h2>
+        <div class="edu-card">
+          <div class="edu-left">
+            <div class="edu-school-row">
+              <img src="sbu-logo.png" alt="Stony Brook University" class="edu-logo" />
+              <p class="edu-school">Stony Brook University</p>
+            </div>
+            <p class="edu-degree">Applied Mathematics &amp; Statistics</p>
           </div>
-          <dl class="metrics" aria-label="요약 지표">
-            <div class="metrics__item">
-              <dt>경력</dt>
-              <dd><span class="metrics__value">0</span>년 <span class="metrics__suffix">(신입)</span></dd>
-            </div>
-            <div class="metrics__item">
-              <dt>프로젝트</dt>
-              <dd><span class="metrics__value">2</span>+</dd>
-            </div>
-            <div class="metrics__item">
-              <dt>배포</dt>
-              <dd><span class="metrics__value">-</span></dd>
-            </div>
-          </dl>
+          <p class="edu-date">Expected Graduation: May 2026</p>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <div class="container narrow">
-          <h2 class="section-title">소개</h2>
-          <p class="prose">
-            저는 금융, 데이터, 그리고 현실 문제 해결에 강한 관심을 가진 개발자입니다. 웹 애플리케이션부터 시스템 레벨 도구까지,
-            실제로 작동하는 실용적인 시스템을 만드는 것을 목표로 하며, 문제를 단계적으로 쪼개 끝까지 이해하고 해결하는 과정에서
-            즐거움을 느낍니다.
-            <br /><br />
-            최근에는 백엔드 개발, 데이터베이스 설계, 그리고 보안 중심 시스템 구축에 집중하고 있습니다. 또한 응용수학/통계 배경을
-            바탕으로 프로그래밍 역량을 결합해 핀테크 및 데이터 기반 환경에서 성장하고 싶습니다.
-            <br /><br />
-            의미 있는 제품에 기여하면서 개발자로서 빠르게 성장할 수 있는 기회를 찾고 있습니다.
-          </p>
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2 class="section-heading">Contact</h2>
+        <p class="contact-desc">Feel free to reach out through the links below.</p>
+        <div class="contact-links">
+          <a href="https://github.com/Siennacho" target="_blank" rel="noopener noreferrer" class="contact-icon-btn" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/seohyun-cho-66b93a392/?locale=ko" target="_blank" rel="noopener noreferrer" class="contact-icon-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:siennacho06@gmail.com" class="contact-icon-btn" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
         </div>
       </section>
 
-      <section id="work" class="section section--alt">
-        <div class="container">
-          <h2 class="section-title">프로젝트</h2>
-          <p class="section-desc">실제 문제를 해결한 작업 2가지를 중심으로 정리했습니다.</p>
-          <ul class="card-grid">
-            <li>
-              <article class="card">
-                <h3 class="card__title">Bestern 자산관리(Asset Management) 웹사이트</h3>
-                <p class="card__meta">개인 · Full-stack · Flask · HTML/CSS · Tailwind · SQLite/PostgreSQL</p>
-                <p class="card__text">
-                  자산운용사 기업 웹사이트를 구축했습니다. 사용자 인증, 게시판, 다국어 지원을 포함해 운영에 필요한 기능을
-                  백엔드/DB 중심으로 설계하고 구현했습니다.
-                  <br /><br />
-                  → 로그인 시스템 구현, DB 영속화, 파일 업로드 기능 개발<br />
-                  → 금융 콘텐츠 페이지 구조화 및 관리자 기반 게시/관리 시스템 설계
-                </p>
-                <div class="card__links">
-                  <a href="https://bestern.co.kr" target="_blank" rel="noopener noreferrer">Live</a>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="card">
-                <h3 class="card__title">PortBlocker (USB 보안 시스템)</h3>
-                <p class="card__meta">개인 · Backend/System · Python · Windows Registry · WMI · Tkinter</p>
-                <p class="card__text">
-                  승인되지 않은 저장 장치를 차단하고, 허용된 디바이스만 사용할 수 있도록 제어하는 Windows 기반 USB 제어 시스템을
-                  만들었습니다.
-                  <br /><br />
-                  → 레지스트리 정책 및 디바이스 ID 기반 필터링 구현<br />
-                  → 실시간 USB 감지/제어 모니터링 로직 설계
-                  <br /><br />
-                  결과: 외부 저장 장치 접근을 제한해 보안 수준을 강화했습니다.
-                </p>
-                <div class="card__links">
-                  <a href="https://github.com/Siennacho" target="_blank" rel="noopener noreferrer">Code</a>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
+    </div>
 
-      <section id="education" class="section">
-        <div class="container">
-          <h2 class="section-title">학력</h2>
-          <ul class="edu-list">
-            <li class="edu-item">
-              <p class="edu-item__school">Stony Brook University</p>
-              <p class="edu-item__degree">Applied Mathematics &amp; Statistics</p>
-              <p class="edu-item__date">2026년 5월 졸업 예정</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="stack" class="section">
-        <div class="container">
-          <h2 class="section-title">기술 스택</h2>
-          <ul class="stack-list" aria-label="기술 목록">
-            <li>Python</li>
-            <li>Flask</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Git</li>
-            <li>SQL (SQLite/PostgreSQL)</li>
-            <li>Windows (Registry/WMI)</li>
-            <li>Security-minded development</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="contact" class="section section--cta">
-        <div class="container narrow">
-          <h2 class="section-title">연락</h2>
-          <p class="prose">협업·채용 관련 문의는 아래로 연락 주세요.</p>
-          <ul class="contact-list">
-            <li>
-              <a href="mailto:siennacho06@gmail.com">siennacho06@gmail.com</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/%EC%84%9C%ED%98%84-%EC%A1%B0-66b93a392/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </li>
-            <li>
-              <a href="https://github.com/Siennacho" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
+    <!-- Footer -->
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© <span data-year></span> Seohyun Cho · <span class="footer-url">siennacho.github.io</span></p>
-      </div>
+      <p>&copy; 2026 Seohyun Cho</p>
     </footer>
 
-    <script src="main.js" defer></script>
   </body>
 </html>
